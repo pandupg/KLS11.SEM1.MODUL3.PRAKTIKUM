@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 1</title>
+</head>
+<script>
+    function siswa() {
+        var x = prompt("Masukkan banyak siswa: ", 0)
+        var nomor = 1
+        do {
+            var nilai = prompt("Masukkan nilai (0-100): ", 0)
+            if (nilai >= 93)
+                document.write("Siswa " + nomor + " mendapat A<br>")
+            else if (nilai >= 83)
+                document.write("Siswa " + nomor + " mendapat B<br>")
+            else if (nilai >= 75)
+                document.write("Siswa " + nomor + " mendapat C<br>")
+            else if (nilai >= 50)
+                document.write("Siswa " + nomor + " mendapat D<br>")
+            else {
+                document.write("Siswa " + nomor + " mendapat E<br>")
+            }
+            nomor++
+            x--
+        }
+        while (x > 0)
+    }
+</script>
+
+<body>
+    <h1 style="margin-left: 20px;">SELAMAT DATANG</h1>
+    <input type="button" value="Input Data" style="margin-left: 20px;" onclick="siswa()">
+</body>
+
+</html>
